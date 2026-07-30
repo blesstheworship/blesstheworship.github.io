@@ -1,58 +1,34 @@
 {
   "profile": {
-    "name": "OBI",
-    "handle": "infrar.",
-    "title": "FULLSTACK SOFTWARE ENGINEER & ANIMATOR",
-    "bio": "I am an 18 year old student-athlete studying for my bs in cs and bioengineering at UMass Amherst, and an experienced developer with 9 years of specific expertise in ROBLOX Lua. Beyond Lua, I have extensive programming experience in Java, C#, Python, JS, and F#. I've worked on high-impact projects, including developing 'Metanoia' and Zombie Task Force (which reached 5.3M+ visits), and I have a strong background in competitive cs through numerous hackathons, including hackMIT, and game dev. My accolades include being the winner of the 2024 Congressional App Challenge in Massachussetts & a third place finish at HackMIT Blueprint.",
+    "name": "WORSHIP",
+    "handle": "worship",
+    "title": "ROBLOX DEVELOPER & LUAU SCRIPTER",
+    "bio": "Independent Roblox developer specializing in Luau scripting. I build original game projects with a focus on clean server-side architecture, modular code, and polished gameplay systems.",
     "stats": [
       {
-        "label": "PROGRAMMING EXPERIENCE",
-        "value": "10 YEARS"
+        "label": "SPECIALTY",
+        "value": "LUAU SCRIPTING"
       },
       {
         "label": "TIME ZONE",
-        "value": "EST"
+        "value": "CST"
       },
       {
         "label": "SKILLS",
-        "value": "FRONTEND & BACKEND PROGRAMMING, ML/AI, ANIMATION, GUI DESIGN, WEB & MOBILE APP DEVELOPMENT, ROJO"
+        "value": "SERVER-SIDE ARCHITECTURE, MODULAR DESIGN, ANIMATION, GUI, DATASTORES, REMOTEEVENTS"
       },
       {
-        "label": "MOST PROFICIENT LANGUAGES",
-        "value": "LUA, C#, JAVA, PYTHON, F#, JS"
+        "label": "MOST PROFICIENT",
+        "value": "LUAU, ROBLOX STUDIO"
       }
     ],
-    "resumeUrl": "./assets/references/Job Resume.pdf",
+    "resumeUrl": "",
     "socials": [
       {
         "platform": "DISCORD",
-        "value": "infrar.",
+        "value": "1worship",
         "icon": "discord",
         "url": "https://discord.com"
-      },
-      {
-        "platform": "EMAIL",
-        "value": "obfrared@gmail.com",
-        "icon": "mail",
-        "url": "mailto:obfrared@gmail.com"
-      },
-      {
-        "platform": "ROBLOX",
-        "value": "dafferrelic842",
-        "icon": "gamepad",
-        "url": "https://www.roblox.com/users/235737325/profile"
-      },
-      {
-        "platform": "GITHUB",
-        "value": "Infrear",
-        "icon": "github",
-        "url": "https://github.com/Infrear"
-      },
-      {
-        "platform": "TWITTER / X",
-        "value": "@Infrar6",
-        "icon": "twitter",
-        "url": "https://twitter.com/Infrar6"
       }
     ]
   },
@@ -70,11 +46,7 @@
       "y": 12,
       "rotation": -4,
       "zIndex": 10,
-      "tags": [
-        "PVP",
-        "GUI",
-        "VFX"
-      ]
+      "tags": ["PVP", "GUI", "VFX"]
     },
     {
       "id": "vid-2-crystalgea",
@@ -89,31 +61,7 @@
       "y": 8,
       "rotation": 6,
       "zIndex": 11,
-      "tags": [
-        "OPEN-WORLD",
-        "QUEST-SYSTEM",
-        "DIALOGUE",
-        "GUI",
-        "CHARACTER CUSTOMIZATION"
-      ]
-    },
-    {
-      "id": "vid-3-blender-cutscene",
-      "title": "3D BLENDER GAME CUTSCENE",
-      "category": "BLENDER 3D / CINEMATICS",
-      "description": "Fully rendered and animated, 3D cinematic cutscene built from scratch for an upcoming game title.",
-      "videoUrl": "./new-assets/past-experience-images/metanoia/promotional-video.mp4",
-      "poster": "https://pub-46ee5b654930446683fa7f29608e9cd8.r2.dev/posters/layla work.png",
-      "frameStyle": "frame1",
-      "themeColor": "#FFFFFF",
-      "x": 25,
-      "y": 35,
-      "rotation": -2,
-      "zIndex": 12,
-      "tags": [
-        "CUTSCENE",
-        "BLENDER"
-      ]
+      "tags": ["OPEN-WORLD", "QUEST-SYSTEM", "DIALOGUE", "GUI", "CHARACTER CUSTOMIZATION"]
     },
     {
       "id": "vid-4-zombie-pve",
@@ -128,30 +76,7 @@
       "y": 28,
       "rotation": -7,
       "zIndex": 13,
-      "tags": [
-        "PVE",
-        "ZOMBIE",
-        "GUNS"
-      ]
-    },
-    {
-      "id": "vid-5-pedestrian-ai",
-      "title": "OPTIMIZED PEDESTRIAN AI SYSTEM",
-      "category": "ROBLOX LUA / AI & OPTIMIZATION",
-      "description": "Highly optimized, Persona 5-inspired smart pedestrian and walking people system utilizing advanced math for server performance.",
-      "videoUrl": "",
-      "poster": "./assets/zigzag background.png",
-      "frameStyle": "frame1",
-      "themeColor": "#111111",
-      "x": 12,
-      "y": 60,
-      "rotation": 5,
-      "zIndex": 14,
-      "tags": [
-        "MATHS",
-        "OPTIMIZATION",
-        "CUSTOM-HUMAN"
-      ]
+      "tags": ["PVE", "ZOMBIE", "GUNS"]
     },
     {
       "id": "vid-6-car-physics",
@@ -166,29 +91,7 @@
       "y": 55,
       "rotation": -3,
       "zIndex": 15,
-      "tags": [
-        "PHYSICS",
-        "CARS"
-      ]
-    },
-    {
-      "id": "vid-7-camera-sys",
-      "title": "DYNAMIC CAMERA MANIPULATION",
-      "category": "ROBLOX LUA / CINEMATOGRAPHY",
-      "description": "Advanced camera movement and manipulation system driven by mathematical formulas to recreate the dynamic Persona 5 dialogue feel.",
-      "videoUrl": "",
-      "poster": "./assets/zigzag background.png",
-      "frameStyle": "frame1",
-      "themeColor": "#E60012",
-      "x": 75,
-      "y": 50,
-      "rotation": 4,
-      "zIndex": 16,
-      "tags": [
-        "MATH",
-        "CAMERA-MANIPULATION",
-        "DIALOGUE"
-      ]
+      "tags": ["PHYSICS", "CARS"]
     },
     {
       "id": "vid-8-survival-combat",
@@ -203,33 +106,7 @@
       "y": 80,
       "rotation": -6,
       "zIndex": 17,
-      "tags": [
-        "PVP",
-        "GAME-MECHANIC"
-      ]
-    },
-    {
-      "id": "vid-9-persona-dialogue",
-      "title": "PERSONA DIALOGUE & DYNAMIC NPCS",
-      "category": "ROBLOX LUA / SYSTEMS & VFX",
-      "description": "Integrated Persona 5-style dialogue UI, custom NPC pathfinding, cinematic cutscenes, and ambient VFX including dropping clouds.",
-      "videoUrl": "",
-      "poster": "./assets/zigzag background.png",
-      "frameStyle": "frame1",
-      "themeColor": "#FFFFFF",
-      "x": 30,
-      "y": 75,
-      "rotation": 2,
-      "zIndex": 18,
-      "tags": [
-        "GUI",
-        "DIALOGUE",
-        "CUTSCENE",
-        "NPC",
-        "VFX",
-        "CUSTOM-HUMAN",
-        "PATHFINDING"
-      ]
+      "tags": ["PVP", "GAME-MECHANIC"]
     },
     {
       "id": "vid-10-smooth-cutscene",
@@ -244,29 +121,7 @@
       "y": 82,
       "rotation": -5,
       "zIndex": 19,
-      "tags": [
-        "CUTSCENE",
-        "CAMERA-MANIPULATION"
-      ]
-    },
-    {
-      "id": "vid-11-story-intro",
-      "title": "STORY GAME INTRO SEQUENCE",
-      "category": "ROBLOX LUA / NARRATIVE DESIGN",
-      "description": "A complete opening narrative sequence for a story game, featuring synchronized GUI animations, dialogue progression, and fully scripted cutscenes.",
-      "videoUrl": "",
-      "poster": "./assets/zigzag background.png",
-      "frameStyle": "frame1",
-      "themeColor": "#111111",
-      "x": 82,
-      "y": 72,
-      "rotation": 7,
-      "zIndex": 20,
-      "tags": [
-        "GUI",
-        "DIALOGUE",
-        "CUTSCENE"
-      ]
+      "tags": ["CUTSCENE", "CAMERA-MANIPULATION"]
     },
     {
       "id": "vid-12-inventory",
@@ -281,29 +136,7 @@
       "y": 18,
       "rotation": -8,
       "zIndex": 21,
-      "tags": [
-        "MATH",
-        "DATASTORING",
-        "UI-DESIGN"
-      ]
-    },
-    {
-      "id": "vid-13-monster-rig",
-      "title": "MONSTER RIGGING & ANIMATION",
-      "category": "BLENDER 3D / CREATURE DESIGN",
-      "description": "Custom armature rigging and keyframed creature animations designed to bring a monster model to life.",
-      "videoUrl": "",
-      "poster": "./assets/zigzag background.png",
-      "frameStyle": "frame1",
-      "themeColor": "#E60012",
-      "x": 40,
-      "y": 22,
-      "rotation": 3,
-      "zIndex": 22,
-      "tags": [
-        "RIGGING",
-        "CREATURE-ANIMATION"
-      ]
+      "tags": ["MATH", "DATASTORING", "UI-DESIGN"]
     },
     {
       "id": "vid-14-pokemon-prototype",
@@ -318,11 +151,7 @@
       "y": 15,
       "rotation": -4,
       "zIndex": 23,
-      "tags": [
-        "OLDCLIP",
-        "CONCEPT",
-        "POKEMON"
-      ]
+      "tags": ["OLDCLIP", "CONCEPT", "POKEMON"]
     },
     {
       "id": "vid-15-planet-travel",
@@ -337,10 +166,7 @@
       "y": 45,
       "rotation": 8,
       "zIndex": 24,
-      "tags": [
-        "OLDCLIP",
-        "CONCEPT"
-      ]
+      "tags": ["OLDCLIP", "CONCEPT"]
     },
     {
       "id": "vid-16-rope-physics",
@@ -355,125 +181,8 @@
       "y": 50,
       "rotation": -5,
       "zIndex": 25,
-      "tags": [
-        "OLDCLIP",
-        "MATH",
-        "GAME-MECHANIC"
-      ]
-    },
-    {
-      "id": "vid-17-anime-combat",
-      "title": "ANIME COMBAT REPLICATION",
-      "category": "BLENDER 3D / ANIMATION",
-      "description": "A fun commissioned side-project focused on accurately replicating high-speed combat animations and cutscenes from the Seven Deadly Sins anime.",
-      "videoUrl": "https://pub-46ee5b654930446683fa7f29608e9cd8.r2.dev/sds anime animation.mp4",
-      "poster": "https://pub-46ee5b654930446683fa7f29608e9cd8.r2.dev/posters/sds anime animation.png",
-      "frameStyle": "frame1",
-      "themeColor": "#111111",
-      "x": 85,
-      "y": 38,
-      "rotation": 5,
-      "zIndex": 26,
-      "tags": [
-        "OLDCLIP",
-        "ASS",
-        "BULLSHIT",
-        "CUTSCENE"
-      ]
+      "tags": ["OLDCLIP", "MATH", "GAME-MECHANIC"]
     }
   ],
-  "experiences": [
-    {
-      "id": "exp-metanoia",
-      "title": "METANOIA",
-      "role": "HEAD PROGRAMMER / ANIMATOR",
-      "dates": "In Development",
-      "description": "Developed highly optimized, object-oriented systems for an upcoming game based on the persona series.",
-      "storeIcon": "./new-assets/past-experience-images/metanoia/store-icon.png",
-      "inGameImage": "./new-assets/past-experience-images/metanoia/ingame-image.png",
-      "promoImages": [],
-      "promoVideo": "./new-assets/past-experience-images/metanoia/promotional-video.mp4"
-    },
-    {
-      "id": "exp-congressionalappchallenge",
-      "title": "CONGRESSIONAL APP CHALLENGE",
-      "descTextSize": "0.525rem",
-      "showPromoImageFirst": true,
-      "role": "PROGRAMMER & RESEARCHER",
-      "dates": "Aug - Oct 2024",
-      "description": "Developed 'Ecosense' App, utilizing YOLOv11 and Azure AI to identify species and analyze real-time USGS/EPA data. Awarded winner; received coverage in local news publications.",
-      "articleLink": "https://www.lowellsun.com/2024/12/26/trahan-celebrates-2024-congressional-app-challenge-winners/",
-      "storeIcon": "./new-assets/past-experience-images/congressional-app-challenge/congressionalseal.jpg",
-      "inGameImage": null,
-      "promoImages": [
-        "./new-assets/past-experience-images/congressional-app-challenge/congressional-app-challenge-coalition-vertical-2.png"
-      ],
-      "promoVideo": "https://www.youtube.com/watch?v=9Vvxeft4YZQ"
-    },
-    {
-      "id": "exp-ztf",
-      "title": "ZTF: RELOADED",
-      "showPromoImageFirst": true,
-      "role": "PROGRAMMER",
-      "dates": "Apr 2020 - Jan 2022",
-      "description": "Main programmer for zombie effects, crate animation sequences, and UI effects.",
-      "storeIcon": "./new-assets/past-experience-images/zombie-task-force/store-icon.png",
-      "inGameImage": "./new-assets/past-experience-images/zombie-task-force/in-game-image.png",
-      "promoImages": [
-        "./new-assets/past-experience-images/zombie-task-force/promotional-image-1.png",
-        "./new-assets/past-experience-images/zombie-task-force/promotional-image-2.png",
-        "./new-assets/past-experience-images/zombie-task-force/promotional-image-3.png",
-        "./new-assets/past-experience-images/zombie-task-force/promotional-image-4.png"
-      ],
-      "promoVideo": null
-    },
-    {
-      "id": "exp-lava-java",
-      "title": "LAVA JAVA CAFE",
-      "role": "PROGRAMMER",
-      "dates": "Sep 2021 - Oct 2021",
-      "description": "Scripted a cooking system and custom camera manipulation.",
-      "storeIcon": "./new-assets/past-experience-images/lava-java-cafe/store-icon.png",
-      "inGameImage": "./new-assets/past-experience-images/lava-java-cafe/ingame-image.png",
-      "promoImages": [
-        "./new-assets/past-experience-images/lava-java-cafe/promotional-image-1.png"
-      ],
-      "promoVideo": null
-    },
-    {
-      "id": "exp-crystalgea",
-      "title": "CRYSTALGEA",
-      "role": "HEAD PROGRAMMER",
-      "dates": "Oct 2018 - Mar 2019",
-      "description": "Scripted survival animal AI logic, inventories, and procedural cave mineral/resource spawning math.",
-      "storeIcon": "./new-assets/past-experience-images/crystalgea/store-icon.png",
-      "inGameImage": "./new-assets/past-experience-images/crystalgea/ingame-image.png",
-      "promoImages": [
-        "./new-assets/past-experience-images/crystalgea/promotional-image-1.png"
-      ],
-      "promoVideo": null
-    },
-    {
-      "id": "exp-sky-imagination",
-      "title": "SKY IMAGINATION STUDIOS",
-      "role": "LEAD DEVELOPER",
-      "dates": "2018 - 2019",
-      "description": "Led development efforts for Crystalgea and managed studio programming pipelines.",
-      "storeIcon": "./new-assets/past-experience-images/sky-imagination-studios/Sky imagination Studios Logo.png",
-      "inGameImage": "./new-assets/past-experience-images/sky-imagination-studios/Sky imagination Studios Logo.png",
-      "promoImages": [],
-      "promoVideo": null
-    },
-    {
-      "id": "exp-main",
-      "title": "MAIN EXPERIENCE:",
-      "role": "PROGRAMMER",
-      "dates": "Jun 2013 - Present",
-      "description": "Advanced pathfinding (over/underwater), mob A.I. Server-to-server joining/creation (style of Minecraft/Ark). Stat systems, inventories, and complex combat mechanics. Character creation, taming systems with saves, and custom skinned creatures. Magic, utility enchantments, potions. Structures and vehicles. Procedural world generation with difficulty modes and animal health sensitivity.",
-      "storeIcon": "./assets/starwithoutline.png",
-      "inGameImage": "./assets/zigzag background.png",
-      "promoImages": [],
-      "promoVideo": null
-    }
-  ]
+  "experiences": []
 }
