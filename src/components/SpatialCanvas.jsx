@@ -60,7 +60,7 @@ export default function SpatialCanvas({ videos, onOpenVideo }) {
       </motion.div>
 
       <div className="sticky bottom-4 left-6 z-40 pointer-events-auto hidden md:inline-flex items-center gap-3 ml-6">
-        <div className="bg-black/90 border-2 border-[#E60012] px-4 py-2 text-white font-bold text-xs md:text-sm tracking-widest uppercase transform -skew-x-6 shadow-[4px_4px_0px_#000000] flex items-center gap-2">
+        <div className="bg-black/90 border-2 border-[#8B2FE0] px-4 py-2 text-white font-bold text-xs md:text-sm tracking-widest uppercase transform -skew-x-6 shadow-[4px_4px_0px_#000000] flex items-center gap-2">
           <span>explore video collection!</span>
         </div>
       </div>
