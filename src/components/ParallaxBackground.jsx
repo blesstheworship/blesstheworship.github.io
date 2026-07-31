@@ -5,17 +5,13 @@ export default function ParallaxBackground() {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  // Smooth mouse coordinates centered around 0
   const springX = useSpring(mouseX, { stiffness: 50, damping: 20 });
   const springY = useSpring(mouseY, { stiffness: 50, damping: 20 });
 
-  // Transforms for multi-layer depth
   const bgX1 = useTransform(springX, [-1, 1], [-20, 20]);
   const bgY1 = useTransform(springY, [-1, 1], [-20, 20]);
-
   const bgX2 = useTransform(springX, [-1, 1], [-45, 45]);
   const bgY2 = useTransform(springY, [-1, 1], [-45, 45]);
-
   const starsX = useTransform(springX, [-1, 1], [-70, 70]);
   const starsY = useTransform(springY, [-1, 1], [-70, 70]);
 
@@ -27,7 +23,6 @@ export default function ParallaxBackground() {
       mouseX.set(normalizedX);
       mouseY.set(normalizedY);
     };
-
     window.addEventListener('mousemove', handleMove);
     return () => window.removeEventListener('mousemove', handleMove);
   }, [mouseX, mouseY]);
@@ -82,9 +77,8 @@ export default function ParallaxBackground() {
           alt="star 1"
           animate={{ rotate: 360, y: [0, -15, 0] }}
           transition={{ rotate: { duration: 25, repeat: Infinity, ease: 'linear' }, y: { duration: 4, repeat: Infinity, ease: 'easeInOut' } }}
-          className="absolute top-[12%] left-[8%] w-16 h-16 opacity-40 filter drop-shadow-[0_0_10px_#E60012]"
+          className="absolute top-[12%] left-[8%] w-16 h-16 opacity-40 filter drop-shadow-[0_0_10px_#8B2FE0]"
         />
-
         <motion.img
           src="./assets/starwithoutline.png"
           alt="star 2"
@@ -92,7 +86,6 @@ export default function ParallaxBackground() {
           transition={{ rotate: { duration: 30, repeat: Infinity, ease: 'linear' }, y: { duration: 5, repeat: Infinity, ease: 'easeInOut' } }}
           className="absolute top-[65%] left-[85%] w-24 h-24 opacity-30 filter drop-shadow-[0_0_12px_#FFFFFF]"
         />
-
         <motion.img
           src="./assets/exlaim.png"
           alt="exclamation"
@@ -100,7 +93,6 @@ export default function ParallaxBackground() {
           transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
           className="absolute top-[25%] right-[15%] w-14 h-14 opacity-50"
         />
-
         <motion.img
           src="./assets/starwithcircle.png"
           alt="star 3"
