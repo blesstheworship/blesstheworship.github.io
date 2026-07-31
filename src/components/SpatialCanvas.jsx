@@ -18,19 +18,31 @@ export default function SpatialCanvas({ videos, onOpenVideo }) {
   const handleBringToFront = (id) => {
     setMaxZ((prevMax) => {
       const nextZ = prevMax + 1;
-      setZIndices((prev) => ({
-        ...prev,
-        [id]: nextZ
-      }));
+      setZIndices((prev) => ({ ...prev, [id]: nextZ }));
       return nextZ;
     });
   };
 
   return (
-    <div className="relative w-full h-full overflow-y-auto overflow-x-hidden pt-4 pb-32 md:p-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+    <div className="relative w-full h-full overflow-y-auto overflow-x-hidden pt-4 pb-32 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      {/* Mobile: clean single column */}
+      <div className="flex md:hidden flex-col items-center gap-8 px-4 pb-16">
+        {videos.map((video) => (
+          <PersonaVideoCard
+            key={video.id}
+            video={video}
+            activeZIndex={zIndices[video.id] || 10}
+            onBringToFront={handleBringToFront}
+            onOpenVideo={onOpenVideo}
+            canvasRef={canvasRef}
+          />
+        ))}
+      </div>
+
+      {/* Desktop: 3-column grid via absolute positioning */}
       <motion.div
         ref={canvasRef}
-        className="relative w-full min-h-max md:min-h-[140vh] md:block flex flex-col items-center gap-8 md:gap-0"
+        className="relative w-full min-h-[220vh] hidden md:block"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
