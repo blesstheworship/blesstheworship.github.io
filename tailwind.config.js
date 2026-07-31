@@ -8,8 +8,8 @@ export default {
     extend: {
       colors: {
         persona: {
-          red: "#E60012",
-          darkRed: "#99000C",
+          red: "#8B2FE0",
+          darkRed: "#5A1B94",
           black: "#111111",
           grey: "#1A1A1A",
           lightGrey: "#2A2A2A",
