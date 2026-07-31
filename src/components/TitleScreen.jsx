@@ -51,9 +51,9 @@ export default function TitleScreen({ onSelectPastWork, onSelectExperiences, onO
 />
 
           <div
-            className="absolute inset-0 flex flex-col items-center justify-center"
-            style={{ transform: 'translate(calc(var(--box-w) * 0.205), 0.5rem)' }}
-          >
+      className="absolute inset-0 flex flex-col items-center justify-center"
+      style={{ transform: 'translate(0, 0.5rem)' }}
+>
             <h1
               className="text-white font-black tracking-tighter transform -skew-x-6 drop-shadow-[4px_4px_0px_#E60012]"
               style={{
