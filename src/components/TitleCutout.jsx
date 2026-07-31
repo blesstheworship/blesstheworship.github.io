@@ -29,9 +29,9 @@ const LETTER_IMAGES = [
 
 const TitleCutout = memo(function TitleCutout({ onTitleClick }) {
   const words = [
-    { text: "OBI'S", color: "bg-[#E60012] text-white" },
-    { text: "SCRIPTING", color: "bg-white text-black" },
-    { text: "PORTFOLIO", color: "bg-[#111111] text-white border-2 border-[#E60012]" }
+  { text: "WORSHIP'S", color: "bg-[#E60012] text-white" },
+  { text: "SCRIPTING", color: "bg-white text-black" },
+  { text: "PORTFOLIO", color: "bg-[#111111] text-white border-2 border-[#E60012]" }
   ];
 
   // preload all letter accent PNGs on mount so first hover doesn't stall
