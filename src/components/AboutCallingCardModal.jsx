@@ -9,10 +9,8 @@ export default function AboutCallingCardModal({ profile, isOpen, onClose }) {
     <AnimatePresence>
       <div className="fixed inset-0 z-[9000] flex items-center justify-center p-4 md:p-8 bg-black/80 backdrop-blur-md">
 
-        {/* Fullscreen Backdrop Close Trigger */}
         <div className="absolute inset-0" onClick={onClose} />
 
-        {/* Persona Angled Calling Card Container */}
         <motion.div
           initial={{ opacity: 0, scale: 0.85, rotate: -6 }}
           animate={{ opacity: 1, scale: 1, rotate: -2 }}
@@ -20,7 +18,6 @@ export default function AboutCallingCardModal({ profile, isOpen, onClose }) {
           transition={{ type: 'spring', stiffness: 220, damping: 20 }}
           className="relative w-full max-w-4xl max-h-[85vh] overflow-y-auto overflow-x-hidden bg-black border-4 border-[#E60012] p-4 md:p-10 shadow-[16px_16px_0px_#111111] z-10 transform -skew-x-3"
         >
-          {/* Header Diagonal Banner */}
           <div className="absolute top-0 left-0 right-0 h-12 bg-[#E60012] flex items-center justify-between px-4 md:px-6 transform -skew-x-6 border-b-2 border-white">
             <span
               className="text-white text-base md:text-xl font-black tracking-widest uppercase flex items-center gap-2"
@@ -29,7 +26,6 @@ export default function AboutCallingCardModal({ profile, isOpen, onClose }) {
               <Trophy className="w-4 h-4 md:w-5 md:h-5 text-white" />
               CALLING CARD
             </span>
-
             <button
               onClick={onClose}
               className="bg-black text-white hover:bg-white hover:text-black p-1 border-2 border-white font-bold transition-colors shadow-[2px_2px_0px_#000]"
@@ -38,20 +34,16 @@ export default function AboutCallingCardModal({ profile, isOpen, onClose }) {
             </button>
           </div>
 
-          {/* Modal Main Content Layout */}
           <div className="mt-14 md:mt-10 grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-center">
 
-            {/* Left Character Bio & Avatar Card */}
             <div className="lg:col-span-5 flex flex-col items-center text-center bg-[#111111] p-4 md:p-6 border-2 border-white/20 transform -skew-x-3 shadow-[6px_6px_0px_#E60012] md:shadow-[8px_8px_0px_#E60012]">
               <div className="relative w-24 h-24 md:w-44 md:h-44 bg-[#E60012] border-4 border-white transform -rotate-3 overflow-hidden shadow-[4px_4px_0px_#000000] md:shadow-[6px_6px_0px_#000000] flex items-center justify-center">
-                {/* Character Photo */}
                 <img
                   src="./new-assets/yaboi/headshot.png"
                   alt="Worship"
                   className="w-full h-full object-cover object-center transform rotate-3 skew-x-6 scale-110"
                 />
               </div>
-
               <h2
                 className="text-xl md:text-3xl font-black text-white mt-4 tracking-tight"
                 style={{ fontFamily: "'Persona Aura', sans-serif" }}
@@ -63,10 +55,8 @@ export default function AboutCallingCardModal({ profile, isOpen, onClose }) {
               </p>
             </div>
 
-            {/* Right Detailed Bio & Stats Grid */}
             <div className="lg:col-span-7 flex flex-col justify-between">
 
-              {/* Persona Chatbox Styled Dialog Container */}
               <div className="relative bg-[#1a1a1a] p-4 md:p-6 border-2 border-[#E60012] shadow-[4px_4px_0px_#000] md:shadow-[6px_6px_0px_#000]">
                 <div className="absolute -top-3 left-4 bg-[#E60012] px-2 py-0.5 text-white font-bold text-[10px] tracking-widest uppercase border border-white">
                   ABOUT ME
@@ -76,7 +66,6 @@ export default function AboutCallingCardModal({ profile, isOpen, onClose }) {
                 </p>
               </div>
 
-              {/* Stats Key Badges */}
               <div className="mt-6 grid grid-cols-2 gap-3">
                 {profile.stats?.map((stat, idx) => (
                   <div
@@ -96,7 +85,6 @@ export default function AboutCallingCardModal({ profile, isOpen, onClose }) {
                 ))}
               </div>
 
-              {/* Social Links List */}
               <div className="mt-6">
                 <h4
                   className="text-white text-sm font-bold tracking-widest uppercase mb-3 flex items-center gap-2"
