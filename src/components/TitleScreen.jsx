@@ -27,7 +27,7 @@ export default function TitleScreen({ onSelectPastWork, onSelectExperiences, onO
       {/* Bottom Left Text */}
       <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 z-50 pointer-events-none">
         <p className="text-white/40 italic text-xs md:text-sm tracking-wide">
-          yes i made this website
+          Worship's Portfolio!
         </p>
       </div>
 
@@ -44,11 +44,11 @@ export default function TitleScreen({ onSelectPastWork, onSelectExperiences, onO
           }}
         >
           <img
-            src="./new-assets/obis programming portfolio box main.png"
-            alt="Title Box"
-            className="absolute inset-0 w-full h-full object-contain filter drop-shadow-[10px_10px_0px_rgba(0,0,0,0.8)]"
-            onError={(e) => { e.target.style.display = 'none'; }}
-          />
+    src="./new-assets/obis programming portfolio box main.png"
+    alt="Title Box"
+    className="absolute inset-0 w-full h-full object-contain filter drop-shadow-[10px_10px_0px_rgba(0,0,0,0.8)] opacity-0"
+    onError={(e) => { e.target.style.display = 'none'; }}
+/>
 
           <div
             className="absolute inset-0 flex flex-col items-center justify-center"
