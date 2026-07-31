@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ExternalLink, Download, ShieldCheck, Cpu, Code, Trophy, Terminal } from 'lucide-react';
+import { X, ExternalLink, ShieldCheck, Trophy } from 'lucide-react';
 
 export default function AboutCallingCardModal({ profile, isOpen, onClose }) {
   if (!isOpen || !profile) return null;
@@ -39,16 +39,16 @@ export default function AboutCallingCardModal({ profile, isOpen, onClose }) {
           </div>
 
           {/* Modal Main Content Layout */}
-          <div className="mt-14 md:mt-10 grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-start">
+          <div className="mt-14 md:mt-10 grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-center">
 
             {/* Left Character Bio & Avatar Card */}
             <div className="lg:col-span-5 flex flex-col items-center text-center bg-[#111111] p-4 md:p-6 border-2 border-white/20 transform -skew-x-3 shadow-[6px_6px_0px_#E60012] md:shadow-[8px_8px_0px_#E60012]">
               <div className="relative w-24 h-24 md:w-44 md:h-44 bg-[#E60012] border-4 border-white transform -rotate-3 overflow-hidden shadow-[4px_4px_0px_#000000] md:shadow-[6px_6px_0px_#000000] flex items-center justify-center">
                 {/* Character Photo */}
                 <img
-                  src="./new-assets/yaboi/headshot.jpg"
-                  alt="Obi Profile"
-                  className="w-full h-full object-cover transform rotate-3 skew-x-6 scale-110"
+                  src="./new-assets/yaboi/headshot.png"
+                  alt="Worship"
+                  className="w-full h-full object-cover object-center transform rotate-3 skew-x-6 scale-110"
                 />
               </div>
 
@@ -61,18 +61,6 @@ export default function AboutCallingCardModal({ profile, isOpen, onClose }) {
               <p className="text-[#E60012] font-bold text-[10px] md:text-sm tracking-widest uppercase mt-1">
                 {profile.title}
               </p>
-
-              {/* Resume Button */}
-              {profile.resumeUrl && (
-                <a
-                  href={profile.resumeUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-4 md:mt-5 w-full bg-[#E60012] hover:bg-white text-white hover:text-black font-black text-[10px] md:text-sm py-2 px-2 md:py-2.5 md:px-4 border-2 border-white tracking-widest uppercase transition-all flex items-center justify-center gap-2 shadow-[4px_4px_0px_#000]"
-                >
-                  <Download className="w-3 h-3 md:w-4 md:h-4" /> DOWNLOAD RESUME
-                </a>
-              )}
             </div>
 
             {/* Right Detailed Bio & Stats Grid */}
@@ -118,7 +106,7 @@ export default function AboutCallingCardModal({ profile, isOpen, onClose }) {
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {profile.socials?.map((social, idx) => (
-                    <a
+                    
                       key={idx}
                       href={social.url}
                       target="_blank"
