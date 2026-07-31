@@ -31,11 +31,11 @@ body {
 }
 
 .persona-box-shadow {
-  box-shadow: 8px 8px 0px #E60012, -4px -4px 0px #000000;
+  box-shadow: 8px 8px 0px #8B2FE0, -4px -4px 0px #000000;
 }
 
 .persona-box-shadow-dark {
-  box-shadow: 10px 10px 0px #111111, 4px 4px 0px #E60012;
+  box-shadow: 10px 10px 0px #111111, 4px 4px 0px #8B2FE0;
 }
 
 /* Jagged Frame Mask Utilities */
@@ -59,6 +59,6 @@ body {
   background: #111111;
 }
 ::-webkit-scrollbar-thumb {
-  background: #E60012;
+  background: #8B2FE0;
   border-radius: 2px;
 }
