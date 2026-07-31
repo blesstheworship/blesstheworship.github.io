@@ -39,7 +39,7 @@ export default function AboutCallingCardModal({ profile, isOpen, onClose }) {
             <div className="lg:col-span-5 flex flex-col items-center text-center bg-[#111111] p-4 md:p-6 border-2 border-white/20 transform -skew-x-3 shadow-[6px_6px_0px_#8B2FE0] md:shadow-[8px_8px_0px_#8B2FE0]">
               <div className="relative w-24 h-24 md:w-44 md:h-44 bg-[#8B2FE0] border-4 border-white transform -rotate-3 overflow-hidden shadow-[4px_4px_0px_#000000] md:shadow-[6px_6px_0px_#000000] flex items-center justify-center">
                 <img
-                  src="./new-assets/yaboi/headshot.jpg"
+                  src="./new-assets/yaboi/headshot.png"
                   alt="Worship"
                   className="w-full h-full object-cover object-center transform rotate-3 skew-x-6 scale-110"
                 />
