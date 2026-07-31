@@ -94,13 +94,7 @@ export default function AboutCallingCardModal({ profile, isOpen, onClose }) {
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {profile.socials?.map((social, idx) => (
-                    
-                      key={idx}
-                      href={social.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="bg-[#111111] hover:bg-[#E60012] text-white text-xs px-3 py-1.5 font-bold tracking-wider uppercase border border-white/30 hover:border-white transition-all flex items-center gap-1.5 shadow-[2px_2px_0px_#000]"
-                    >
+                    <a key={idx} href={social.url} target="_blank" rel="noreferrer" className="bg-[#111111] hover:bg-[#E60012] text-white text-xs px-3 py-1.5 font-bold tracking-wider uppercase border border-white/30 hover:border-white transition-all flex items-center gap-1.5 shadow-[2px_2px_0px_#000]">
                       <span>{social.platform}:</span>
                       <span className="text-[#E60012] hover:text-white font-normal">{social.value}</span>
                       <ExternalLink className="w-3 h-3 ml-0.5" />
