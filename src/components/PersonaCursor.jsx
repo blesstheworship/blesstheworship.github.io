@@ -69,7 +69,7 @@ export default function PersonaCursor() {
         <img
           src="./assets/starwithcircle.png"
           alt="star cursor"
-          className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(230,0,18,0.8)]"
+          className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(139,47,224,0.8)]"
           onError={(e) => { e.target.src = './assets/starwithoutline.png'; }}
         />
       </motion.div>
@@ -88,8 +88,8 @@ export default function PersonaCursor() {
         className="absolute w-8 h-8 pointer-events-none"
       >
         <div className="relative w-full h-full">
-          {/* Custom Persona Red Angle Cursor */}
-          <div className="w-5 h-5 bg-[#E60012] border-2 border-white transform -rotate-12 shadow-[2px_2px_0px_#000]" />
+          {/* Custom Persona Purple Angle Cursor */}
+          <div className="w-5 h-5 bg-[#8B2FE0] border-2 border-white transform -rotate-12 shadow-[2px_2px_0px_#000]" />
           <div className="absolute top-0 right-0 w-2 h-2 bg-white rounded-full animate-ping" />
         </div>
       </motion.div>
