@@ -24,7 +24,6 @@ const PersonaVideoCard = memo(function PersonaVideoCard({
   const handleMouseEnter = useCallback(() => {
     setIsHovered(true);
     setVideoLoaded(true);
-    // small delay so src has time to attach before calling play
     requestAnimationFrame(() => {
       if (videoRef.current) {
         videoRef.current.play().catch(() => { });
@@ -61,22 +60,19 @@ const PersonaVideoCard = memo(function PersonaVideoCard({
       onMouseLeave={handleMouseLeave}
       className={`interactive-card ${isDraggable ? 'cursor-grab active:cursor-grabbing' : ''} group select-none relative md:absolute md:left-[var(--md-left)] md:top-[var(--md-top)] will-change-transform`}
     >
-      <div className="relative p-2 rounded-sm bg-black/90 border-2 border-white/20 shadow-[10px_10px_0px_#000000] hover:shadow-[14px_14px_0px_#E60012] transition-all duration-300 transform -skew-x-2">
-
-        <div className="flex items-center justify-between bg-[#111111] px-3 py-1 mb-2 border-b-2 border-[#E60012]">
-          <span className="text-[#E60012] text-xs font-bold tracking-widest uppercase flex items-center gap-1">
+      <div className="relative p-2 rounded-sm bg-black/90 border-2 border-white/20 shadow-[10px_10px_0px_#000000] hover:shadow-[14px_14px_0px_#8B2FE0] transition-all duration-300 transform -skew-x-2">
+        <div className="flex items-center justify-between bg-[#111111] px-3 py-1 mb-2 border-b-2 border-[#8B2FE0]">
+          <span className="text-[#8B2FE0] text-xs font-bold tracking-widest uppercase flex items-center gap-1">
             <Tag className="w-3 h-3" /> {video.category}
           </span>
           <span className="text-white/60 text-[10px] font-mono">
-            ID: #{video.id.slice(-4).toUpperCase()}
+ID: #{video.id.slice(-4).toUpperCase()}
           </span>
         </div>
-
         <div
           onClick={() => onOpenVideo(video)}
           className="relative w-full aspect-video bg-black overflow-hidden cursor-pointer persona-mask-1 border-2 border-[#111]"
         >
-          {/* poster image shown always as the thumbnail */}
           {video.poster && (
             <img
               src={video.poster}
@@ -85,8 +81,6 @@ const PersonaVideoCard = memo(function PersonaVideoCard({
               loading="lazy"
             />
           )}
-
-          {/* video only mounts when hovered — saves massive memory & decode cost */}
           {videoLoaded && video.videoUrl && (
             <video
               ref={videoRef}
@@ -99,29 +93,25 @@ const PersonaVideoCard = memo(function PersonaVideoCard({
               className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 filter brightness-90 contrast-110"
             />
           )}
-
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent opacity-80 group-hover:opacity-40 transition-opacity" />
-
           <div className="absolute inset-0 flex items-center justify-center">
             <motion.div
               animate={{ scale: isHovered ? [1, 1.25, 1] : 1 }}
               transition={{ duration: 1.2, repeat: isHovered ? Infinity : 0 }}
-              className="w-14 h-14 bg-[#E60012] text-white flex items-center justify-center border-2 border-white transform -rotate-6 shadow-[4px_4px_0px_#000000]"
+              className="w-14 h-14 bg-[#8B2FE0] text-white flex items-center justify-center border-2 border-white transform -rotate-6 shadow-[4px_4px_0px_#000000]"
             >
               <Play className="w-7 h-7 fill-white translate-x-0.5" />
             </motion.div>
           </div>
-
-          <div className="absolute bottom-2 left-2 right-2 bg-black/90 p-2 border-l-4 border-[#E60012] transform -skew-x-3">
+          <div className="absolute bottom-2 left-2 right-2 bg-black/90 p-2 border-l-4 border-[#8B2FE0] transform -skew-x-3">
             <h3
-              className="text-white text-base md:text-lg font-black tracking-tight line-clamp-1 group-hover:text-[#E60012] transition-colors"
+              className="text-white text-base md:text-lg font-black tracking-tight line-clamp-1 group-hover:text-[#8B2FE0] transition-colors"
               style={{ fontFamily: "'Persona Aura', sans-serif" }}
             >
               {video.title}
             </h3>
           </div>
         </div>
-
         <div className="mt-3 px-2 flex flex-wrap items-center justify-between gap-1">
           <div className="flex flex-wrap gap-1">
             {video.tags?.slice(0, 3).map((tag, idx) => (
@@ -133,12 +123,11 @@ const PersonaVideoCard = memo(function PersonaVideoCard({
               </span>
             ))}
           </div>
-
           <button
             onClick={() => onOpenVideo(video)}
-            className="bg-[#E60012] hover:bg-white text-white hover:text-black text-xs px-2.5 py-1 font-bold tracking-wider uppercase border border-black transition-colors flex items-center gap-1 shadow-[2px_2px_0px_#000]"
+            className="bg-[#8B2FE0] hover:bg-white text-white hover:text-black text-xs px-2.5 py-1 font-bold tracking-wider uppercase border border-black transition-colors flex items-center gap-1 shadow-[2px_2px_0px_#000]"
           >
-            VIEW <ExternalLink className="w-3 h-3" />
+VIEW <ExternalLink className="w-3 h-3" />
           </button>
         </div>
       </div>
