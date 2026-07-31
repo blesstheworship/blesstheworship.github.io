@@ -184,5 +184,71 @@
       "tags": ["OLDCLIP", "MATH", "GAME-MECHANIC"]
     }
   ],
-  "experiences": []
+  "experiences": [
+    {
+      "id": "exp-metanoia",
+      "title": "METANOIA",
+      "role": "HEAD PROGRAMMER / ANIMATOR",
+      "dates": "In Development",
+      "description": "Developed highly optimized, object-oriented systems for an upcoming game based on the persona series.",
+      "storeIcon": "./new-assets/past-experience-images/metanoia/store-icon.png",
+      "inGameImage": "./new-assets/past-experience-images/metanoia/ingame-image.png",
+      "promoImages": [],
+      "promoVideo": null
+    },
+    {
+      "id": "exp-ztf",
+      "title": "ZTF: RELOADED",
+      "showPromoImageFirst": true,
+      "role": "PROGRAMMER",
+      "dates": "Apr 2020 - Jan 2022",
+      "description": "Main programmer for zombie effects, crate animation sequences, and UI effects.",
+      "storeIcon": "./new-assets/past-experience-images/zombie-task-force/store-icon.png",
+      "inGameImage": "./new-assets/past-experience-images/zombie-task-force/in-game-image.png",
+      "promoImages": [
+        "./new-assets/past-experience-images/zombie-task-force/promotional-image-1.png",
+        "./new-assets/past-experience-images/zombie-task-force/promotional-image-2.png",
+        "./new-assets/past-experience-images/zombie-task-force/promotional-image-3.png",
+        "./new-assets/past-experience-images/zombie-task-force/promotional-image-4.png"
+      ],
+      "promoVideo": null
+    },
+    {
+      "id": "exp-lava-java",
+      "title": "LAVA JAVA CAFE",
+      "role": "PROGRAMMER",
+      "dates": "Sep 2021 - Oct 2021",
+      "description": "Scripted a cooking system and custom camera manipulation.",
+      "storeIcon": "./new-assets/past-experience-images/lava-java-cafe/store-icon.png",
+      "inGameImage": "./new-assets/past-experience-images/lava-java-cafe/ingame-image.png",
+      "promoImages": [
+        "./new-assets/past-experience-images/lava-java-cafe/promotional-image-1.png"
+      ],
+      "promoVideo": null
+    },
+    {
+      "id": "exp-crystalgea",
+      "title": "CRYSTALGEA",
+      "role": "HEAD PROGRAMMER",
+      "dates": "Oct 2018 - Mar 2019",
+      "description": "Scripted survival animal AI logic, inventories, and procedural cave mineral/resource spawning math.",
+      "storeIcon": "./new-assets/past-experience-images/crystalgea/store-icon.png",
+      "inGameImage": "./new-assets/past-experience-images/crystalgea/ingame-image.png",
+      "promoImages": [
+        "./new-assets/past-experience-images/crystalgea/promotional-image-1.png"
+      ],
+      "promoVideo": null
+    },
+    {
+      "id": "exp-sky-imagination",
+      "title": "SKY IMAGINATION STUDIOS",
+      "role": "LEAD DEVELOPER",
+      "dates": "2018 - 2019",
+      "description": "Led development efforts for Crystalgea and managed studio programming pipelines.",
+      "storeIcon": "./new-assets/past-experience-images/sky-imagination-studios/Sky imagination Studios Logo.png",
+      "inGameImage": "./new-assets/past-experience-images/sky-imagination-studios/Sky imagination Studios Logo.png",
+      "promoImages": [],
+      "promoVideo": null
+    }
+  ]
 }
